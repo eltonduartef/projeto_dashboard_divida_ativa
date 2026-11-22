@@ -1,0 +1,12 @@
+nome = (input("Nome do vendedor:"))
+total_vendido = float(input("Total vendido:"))
+meta_mensal = float(input("Meta mensal:"))
+
+print("========== ANÁLISE DE VENDAS ===========")
+print(f"Nome do vendedor: {nome}")
+print(f"Total vendido:R$ {total_vendido :.2f}")
+print(f"Meta mensal:R$ {meta_mensal :.2f}")
+print(f"Comissão (7%):R$ {total_vendido * 0.07 :.2f}")
+print(f"Diferença da meta:R$ {total_vendido - meta_mensal :.2f}")
+print(f"Meta atingida: {(total_vendido / meta_mensal) * 100 :.2f}%")
+print("===============================================")
